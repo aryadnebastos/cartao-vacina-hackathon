@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      
+    </ion-buttons>
+    <ion-title style="color: rgb(32, 216, 94); font: 900px; margin-left: 113px">+Vacina co.</ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-img src="/assets/shapes.svg"></ion-img>
+      <ion-card-header>
+        
+      </ion-card-header>
+      
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header style="background-color: rgb(168, 248, 181)">
+        <ion-label style="font: 50">Login:</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-icon placeholder = "" name="person"></ion-icon> <!-- icone do CPF -->
+        <ion-input>CPF:</ion-input> <!-- Aqui informa o CPF para login -->
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock"></ion-icon> <!-- icone da senha -->
+        <ion-input type=password>Senha:</ion-input> <!-- Aqui informa a senha para login -->
+      </ion-item>
+      <ion-item href=""> <!-- Link para página -->
+        <ion-icon name="log-in"></ion-icon>
+        <ion-label href="">Cadastre-se</ion-label> <!-- Link para o cadastro do usuário -->
+      </ion-item>
+
+      <div (click)="onClickFunction(event)">
+      <ion-button  style="margin-top: 30px" color="success" slot="end"  expand="block">Entrar</ion-button> <!-- -->
+      </div>
+      
+      <a style="margin: 130px; text-decoration: none; color: rgb(89, 238, 89);" href="">Esqueci minha senha</a> <!-- Link para esquecimento da senha -->
+      
+
+      
+    </ion-list>
+</ion-content>
